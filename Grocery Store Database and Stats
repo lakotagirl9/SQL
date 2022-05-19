@@ -1,0 +1,39 @@
+/** school supplies:
+desk (100)
+chair (35)
+pencil (.50)
+notebook (1.50)
+chalk (.25)
+text book (50)
+chromebook (200)
+eraser (.10)
+smartboard (1000)
+lysol wipe (10)
+dust pan (5)
+garbage can (15)
+podium (60)
+table (75)
+folder (.75)
+**/
+
+CREATE TABLE supplies (id INTEGER PRIMARY KEY, name TEXT, cost INTEGER, wholesale INTEGER, brand TEXT, stock INTEGER); 
+
+INSERT INTO supplies values (1, "desk", 200, 100, "Bobs", 5);
+INSERt INTO supplies values (2, "chair", 70, 35, "Toms", 2);
+INSERT INTO supplies values (3, "pencil", 1, .50, "Bobs", 50);
+INSERT INTO supplies values (4, "notebook", 3, 1.5, "Bobs", 20);
+INSERT INTO supplies values (5, "chalk", .50, .25, "Bobs", 1000);
+INSERT INTO supplies values (6,"text_book", 100, 50, "Pearson", 2);
+INSERT INTO supplies values (7, "chromebook", 400, 200, "HP", 6);
+INSERT INTO supplies values (8, "erasers", .20, .10, "Toms", 500);
+INSERT INTO supplies values (9, "smartboard", 2000,1000, "HP", 1);
+INSERT INTO supplies values (10, "lysol_wipes", 20, 10, "Lysol", 50);
+INSERT INTO supplies values (11, "dust_pan", 10, 5, "Menards", 89);
+INSERT INTO supplies values (12, "garbage_can", 30, 15, "Menards", 30);
+INSERT INTO supplies values (13, "podium", 120, 60, "Bobs", 7);
+INSERT INTO supplies values (14, "table", 150, 75, "Toms", 8);
+INSERT INTO supplies values (15, "folder", 1.50, .75, "Bobs", 700);
+
+SELECT * FROM supplies;
+SELECT * FROM supplies ORDER BY cost;
+SELECT SUM (stock) FROM supplies;
